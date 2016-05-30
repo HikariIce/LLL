@@ -102,7 +102,8 @@ if __name__ == "__main__":
     	with open('./data/'+str(i)+'.data','w') as f:
     		f.write('[\n')
     		f.write('[1 0 '+str(e)+' '+str(e)+']\n')
-    		f.write('[0 1 '+str(n-random.randrange(n1,n2))+' '+str(n-random.randrange(n1,n2))+']\n')
+    		#f.write('[0 1 '+str(n-random.randrange(n1,n2))+' '+str(n-random.randrange(n1,n2))+']\n')
+    		f.write('[0 1 '+str(n-n1)+' '+str(n-n2)+']\n')
     		f.write('[0 0 0 0]\n')
     		f.write('[0 0 0 0]\n')
     		f.write(']')
